@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <Button
+        android:id="@+id/bt10per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt15per"
+        android:layout_alignBottom="@+id/bt15per"
+        android:layout_marginRight="21dp"
+        android:layout_toLeftOf="@+id/bt15per"
+        android:text="@string/bt10per"
+    	android:onClick="tip10Percent" />
+
+    <Button
+        android:id="@+id/bt20per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/bt15per"
+        android:onClick="tip20Percent"
+        android:text="@string/bt20per" />
+
+    <Button
+        android:id="@+id/bt15per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="tip15Percent"
+        android:text="@string/bt15per" />
+
+    <EditText
+        android:id="@+id/ettotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt10per"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/bt20per"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ettotal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="89dp" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="@string/lttip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/bt20per"
+        android:layout_toRightOf="@+id/bt15per" />
+
+</RelativeLayout>

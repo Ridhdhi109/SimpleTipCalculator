@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bt10per">10%</string>
+    <string name="bt20per">20%</string>
+    <string name="bt15per">15%</string>
+    <string name="ettotal">Enter Total Check Amount</string>
+    <string name="lttip">Tip is:</string>
+
+</resources>
